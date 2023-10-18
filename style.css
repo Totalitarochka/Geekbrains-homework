@@ -1,0 +1,131 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.h1 {
+    font-family: 'Russo One', sans-serif;
+    color: #000;
+    font-size: 100px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 4px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+.h2 {
+    font-family: 'Russo One', sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header {
+    background-color: #000;
+    width: 1280px;
+    height: 83px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+
+.navigation {
+    flex-shrink: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 406px 28px 407px;
+}
+
+.link_header {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.content {
+    width: 1280px;
+    height: 517px;
+    padding: 1px 0px 0px 0px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.content_left {
+    width: 613px;
+    height: 233px;
+    flex-shrink: 0;
+    margin-left: 100px;
+    margin-top: 126px;
+    margin-bottom: 158px;
+}
+
+
+.about {
+    background-color: #F4F4F4;
+    display: flex;
+    width: 1280px;
+    height: 552px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px
+}
+
+.portfolio {
+    width: 1280px;
+    height: 871px;
+}
+
+.education {
+    background: #F4F4F4;
+    width: 1280px;
+    height: 693px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contacts {
+    width: 1280px;
+    height: 497px;
+}
+
+.footer {
+    background-color: #000;
+    width: 1280px;
+    height: 83px;
+}
+
+.link_footer {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+.icons_contact {
+    width: 1280px;
+}
