@@ -8,74 +8,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Russo+One&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-       <div class="header">
-           <div class="navigation center">
-              <a href="#" class="link_header">Обо мне</a>
-              <a href="#" class="link_header">Портфолио</a>
-              <a href="#" class="link_header">Образование</a>
-              <a href="#" class="link_header">Контакты</a>
-          </div>
-       </div>
-       
-    <div class="content">
-        <h1 class="h1 center">UX/UI DESIGNER</h1>
+    <div class="header center">
+        <a class="header__link" href="#content_link">Обо мне</a>
+        <a class="header__link" href="#portfolio_link">Портфолио</a>
+        <a class="header__link" href="#education_link">Образование</a>
+        <a class="header__link" href="#contacts_link">Контакты</a>
     </div>
-
-    <div class="about center">
-        <div class="about_content"> 
-        <h2 class="h2">Обо мне</h2>
-        <div class="about_content2"> 
-              <div class="icons">
-                <img src="images/PS.svg" alt="Photoshop">
-                <img src="images/Figma.svg" alt="Figma">
-                <img src="images/Tilda.svg" alt="Tilda">
+    <div class="top center">
+        <h1 class="title">UX/UI DESIGNER</h1>
+    </div>
+    <div class="about center" id="content_link">
+        <h2 class="heading">Обо мне</h2>
+        <div class="about__content">
+            <div class="about__skills">
+                <img src="img/PS.svg" alt="PS">
+                <img src="img/Figma.svg" alt="Figma">
+                <img src="img/Tilda.svg" alt="Tilda">
             </div>
-           <p class="p">Привет! Меня зовут Рафикова Дина, и я начинающий веб-дизайнер. 
-            За время своего обучения я детально изучила такие программы и платформы как Photoshop, Figma и Tilda. 
-            За моими плечами 5 полноценных учебных проектов, с ними можно ознакомиться в блоке “Портфолио”. 
-           </p>
+            <p class="text">
+                Привет! Меня зовут Рафикова Дина, и я начинающий веб-дизайнер. 
+                За время своего обучения я детально изучила такие программы и платформы как Photoshop, Figma и Tilda. 
+                За моими плечами 5 полноценных учебных проектов, с ними можно ознакомиться в блоке “Портфолио”. 
+            </p>
         </div>
     </div>
+    <div class="portfolio center" id="portfolio_link">
+        <h2 class="heading">Портфолио</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/portfolio.png"></div>
+              <div class="swiper-slide"><img src="img/portfolio 2.png"></div>
+              <div class="swiper-slide"><img src="img/portfolio 3.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+            </div>
     </div>
-    
-    <div class="portfolio center">
-        <h2 class="h2">Портфолио</h2>
-        <img src="images/portfolio.png" class="works" alt="Portfolio">
-    </div>
-
-    <div class="education center">
-        <h2 class="h2">Образование</h2>
-        <div class="education_all">
-            <img src="images/GB.svg" alt="GB" />
-            <div class="education_content">
-                <p class="p">
-                    Онлайн-университет GeekBrains, специализация «Цифровой дизайнер». В программу входили следующие дисциплины:
+    <div class="education center" id="education_link">
+        <h2 class="heading">Образование</h2>
+        <div class="education__content">
+            <img src="img/gb.svg" alt="gb">
+            <div class="education__info">
+                <p class="text">
+                    Онлайн-университет GeekBrains, специализация «Цифровой дизайнер». В программу входили следующие
+                    дисциплины:
                 </p>
-                <ul>
+                <ul class="text">
                     <li>Композиция, типографика, подготовка макета к вёрстке</li>
                     <li>Adobe Photoshop, Figma, Tilda</li>
                     <li>Основы HTML-вёрстки</li>
                     <li>Основы исследования аудитории</li>
                     <li>Основы проектирования интерфейсов (UX/UI-дизайн)</li>
                 </ul>
+            </div>
         </div>
-     </div>
     </div>
-    
-    <div class="contacts center">
-        <h2 class="h2">Контакты</h2>
-        <a href="mailto:dinafelton@mail.ru" class="link_footer">dinafelton@mail.ru</a>
-        <a href="tel:+79196103707" class="link_footer">+79196103707</a>
+    <div class="contacts center" id="contacts_link">
+        <h2 class="contacts_text">Контакты</h2>
+        <a class="contacts__link" href="mailto:dinafelton@mail.ru">dinafelton@mail.ru</a>
+        <a class="contacts__link" href="tel:+79196103707">+7 919 610 37 07</a>
     </div>
-    
     <div class="footer center">
-            <a href="#"><img src="images/logos_whatsapp-icon.svg" alt="WhatsApp"></a>
-            <a href="#"><img src="images/logos_telegram.svg" alt="Telegram"></a>
+        <a href="#"><img src="img/logos_whatsapp-icon.svg" alt="whatsapp"></a>
+        <a href="#"><img src="img/logos_telegram.svg" alt="telegram"></a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
 </body>
+
 </html>
+
