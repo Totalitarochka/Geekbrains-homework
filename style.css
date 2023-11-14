@@ -9,9 +9,12 @@
   
   body {
     font-family: 'Manrope', sans-serif;
-    scroll-behavior: smooth;
   }
   
+  html {
+    scroll-behavior: smooth;
+    }
+
   a {
     text-decoration: none;
   }
